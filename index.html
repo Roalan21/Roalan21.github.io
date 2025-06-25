@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Virtual Gallery</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    
+    <header>
+        <h1>The Virtual Gallery</h1>
+        <p>Un paseo Virtual desarrado por Roger Alaniz, Nazareth De los Angeles y Lester Nahum</p>
+    </header>
+
+    <section>
+        <h2>Descripción</h2>
+        <p>Este es un juego de un paseo virtual de un museo que aborda de escultura y pintura clasicas de grandes artistas. El proprosito de esto es que
+            el jugador va a poder apreciar e inteactuar con los modelos. Al colisionar con el modelo, el programa mostrara una pequeña informacion del mismo.
+        </p>
+
+    </section>
+
+    <section>
+        <h2>Características</h2>
+        <ul>
+            <li>Cada escultura y pintura aborda su informacion</li>
+            <li>Este juego es educativo</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Imágenes del juego</h2>
+        <div class="gallery">
+            <img src="imagenes/ima1.jpg" alt="Captura del juego 1" onclick="mostrarImagen(this.src)">
+            <img src="imagenes/ima2.jpg" alt="Captura del juego 2" onclick="mostrarImagen(this.src)">
+            <img src="imagenes/menu.jpg" alt="Captura del juego 2" onclick="mostrarImagen(this.src)">
+            <img src="imagenes/info.jpg" alt="Captura del juego 2" onclick="mostrarImagen(this.src)">
+        </div>
+    </section>
+
+    <!-- Contenedor de imagen ampliada (lightbox) -->
+    <div id="lightbox" onclick="cerrarImagen()">
+        <img id="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+    <section>
+        <h2>GitHub de descarga</h2>
+        <p>Puedes ver el código fuente o descargar el juego desde nuestro repositorio:
+        <a href="https://github.com/lesternfm22/Programacion-grafica-proyecto-final?tab=readme-ov-file" target="_blank">Ver en GitHub</a>
+        </p>
+    </section>
+
+    <section>
+        <h2>Desarrolladores</h2>
+        <div class="equipo">
+            <div class="integrante">
+                <img src="imagenes/roger.jpg" alt="Roger Alaniz">
+                <p><strong>Roger Antonio Alaniz Herrera</strong></p>
+                <p>Email: alanizherrera8@gmail.com</p>
+            </div>
+            <div class="integrante">
+                <img src="imagenes/naza.jpg" alt="Nazareth De los Angeles">
+                <p><strong>Nazareth De los Angeles Bran Ramos</strong></p>
+                <p>Email: nazarethbran83@gmail.com</p>
+            </div>
+            <div class="integrante">
+                <img src="imagenes/lester.jpg" alt="Lester Nahum">
+                <p><strong>Lester Nahum Flores Mendoza</strong></p>
+                <p>Email: lester.flores2023.0632u@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2025 Roger Antonio Alaniz Herrera - Todos los derechos reservados</p>
+        <p>&copy; 2025 Nazareth De los Angeles Bran Ramos - Todos los derechos reservados</p>
+        <p>&copy; 2025 Lester Nahum Flores Mendoza - Todos los derechos reservados</p>
+
+    </footer>
+    <script src="funcion.js"></script>
+</body>
+</html>
